@@ -148,34 +148,18 @@ Create a new branch called ＜branch＞. This does not check out the new branch.
 
 ![git-flow](git-flow-nvie-1521x2048.png)
 
-- Tao nhanh chinh master: khong sua doi code tren nhanh nay
-- Tao nhanh developer song song voi nhanh master de hop nhat cac nhanh khac. 
-- Phat trien tinh nag
-  - Tao cac nhanh tinh nang (future branches).
-  - Cac nhanh tinh nang hoan thanh thi merge lai nhanh developer
-  - Nhanh developer day len nhanh release
-  - Nhanh release se day len master
-  - Nhanh master day len production
-  - Xoa release version
-  - Lap lai de phat trien cac tinh nang khac
-- Sua loi
-  - Day loi ve nhanh hotfixes
-  - Dua ve nhanh developer
-  - Sau do se tuong tu nhu phat trien tinh nang
-  - Neu loi nho va xu ly nhanh thi tu hotfixes day lai master va day len production luon
-
 - Nhánh chính **master** không được sửa đổi code
 - Nhánh **develop** song song với nhánh **master**
 - Khi phát triển tính năng:
-    - Tạo nhánh feature branch
+    - Tạo nhánh feature branch từ nhánh develop
     - Sau đó merge về nhánh develop
     - Sau đó đẩy về nhánh release
     - Tạo tag version và đẩy về nhánh master
     - Xóa các nhánh feature branch và nhóm release
 - Khi sửa đổi tính năng:
-    - Sử dụng nhánh hotfixes
+    - Sử dụng nhánh hotfixes từ nhóm master
     - Đưa về nhánh develop
-    -  Sửa xong tạo tag mới ở nhánh release
+    - Sửa xong tạo tag mới ở nhánh release
     - Tiếp tục đẩy về nhánh master 
 
 ---
